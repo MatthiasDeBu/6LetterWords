@@ -44,16 +44,13 @@ namespace _6LetterWords
             foreach(string word in words)
             {
                 GenerateWordCombination(targetLength, words, fullWords, word);
-
             }        
             return combinations.ToList<string>();
         }
 
         private void GenerateWordCombination(int targetLength, List<string> words, HashSet<string> fullWords, string currentWord)
         {
-
-            
-
+          
             if (fullWords.Contains(currentWord))
             {
                 combinations.Add(currentWord);
